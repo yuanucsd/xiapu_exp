@@ -1,6 +1,7 @@
 /*javascript number starts from 0*/
 /*curTrial is the trial number*/
       var audioElement = new Audio("https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r1.wav");
+feature-policy: autoplay 'self'; camera 'none'; document-domain 'self'; encrypted-media 'self'; fullscreen 'self'; geolocation 'none'; microphone 'none'; midi 'none'; payment 'none'; xr-spatial-tracking 'none';
 
 var audioFiles = [
 "https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r1.wav",
