@@ -1695,7 +1695,7 @@ link.click();
           };
 
         
-        $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
+        $.post("https://yuanucsd.github.io/xiapu_exp/save.php", dataToServer);
       }
       
       $("#startExperimentButton").on("click", StartExperiment);
