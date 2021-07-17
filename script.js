@@ -632,6 +632,9 @@ for (let i = 0; i < audioFile.length; i++) {
         $("#doneExperimentII").hide();
         $("#instructionProductiondiv").show();
         $("#startProductiondivButton").on("click", ShowProduction);
+        var curresultList = ["curTrial", "production_character", "production_tone"];
+        csvFile.push(curresultList)
+
       }
 
 
@@ -652,6 +655,9 @@ for (let i = 0; i < audioFile.length; i++) {
         $("#productionnumdiv").text("第"+trialnum+"/"+productionListRandom.length+"题");
         $("#productiontext").text(production_sentence);
         $("#productionButton").on("click", CheckProduction);
+          var curresultList = [curTrial, production_character, production_tone]
+            csvFile.push(curresultList)
+
       }
       
 
