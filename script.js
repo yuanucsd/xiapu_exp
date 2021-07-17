@@ -335,7 +335,8 @@ for (var i in audioFiles) {
           /*stimuli_gl get the tone of the stimuli*/
             var stimuli_gl = trialListRandom[curTrial].gl;
             var stimuli_answer = trialListRandom[curTrial].answer;
-            var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, trialListRandom[curTrial].seq, responseTime]
+            var stimuli_neu = trialListRandom[curTrial].neu;
+            var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime]
             csvFile.push(curresultList)
             
             
@@ -374,10 +375,11 @@ for (var i in audioFiles) {
           /*stimuli_gl get the tone of the stimuli*/
             var stimuli_gl = trialListRandom[curTrial].gl;
             var stimuli_answer = trialListRandom[curTrial].answer;
+            var stimuli_neu = trialListRandom[curTrial].neu;
 
           
           
-          var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, trialListRandom[curTrial].seq, responseTime]
+          var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime]
             csvFile.push(curresultList)
           
           
