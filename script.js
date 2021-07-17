@@ -336,8 +336,8 @@ for (let i = 0; i < audioFile.length; i++) {
             var stimuli_gl = trialListRandom[curTrial].gl;
             var stimuli_answer = trialListRandom[curTrial].answer;
             var stimuli_neu = trialListRandom[curTrial].neu;
-            var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime]
-            csvFile.push(curresultList)
+            var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime];
+            csvFile.push(curresultList);
             
             
             
@@ -379,8 +379,8 @@ for (let i = 0; i < audioFile.length; i++) {
 
           
           
-          var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime]
-            csvFile.push(curresultList)
+          var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime];
+            csvFile.push(curresultList);
           
           
             DoneWithScale();
@@ -651,12 +651,13 @@ for (let i = 0; i < audioFile.length; i++) {
       function RunProduction(){
         $("#productiondiv").show();
         var production_character = productionListRandom[curTrial].character;
+        var production_tone = productionListRandom[curTrial].tone;
         var production_sentence = "我会讲"+"“"+production_character+"”"+"这个字。"
         $("#productionnumdiv").text("第"+trialnum+"/"+productionListRandom.length+"题");
         $("#productiontext").text(production_sentence);
         $("#productionButton").on("click", CheckProduction);
-          var curresultList = [curTrial, production_character, production_tone];
-            csvFile.push(curresultList);
+        var curresultList = [curTrial, production_character, production_tone];
+        csvFile.push(curresultList);
 
       }
       
