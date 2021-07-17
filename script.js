@@ -158,6 +158,40 @@ for (let i = 0; i < audioFile.length; i++) {
       
       /* This gets called when they click the button 
         on the instructions page */
+
+      function StartInstruction(){
+      $("#startholderExperimentButton").unbind("click");
+      $("#startholderdiv").hide();
+      $("#instructions").show();
+      $("#sound").attr(
+          "src",
+          "dissertation_sound/instruction/instruction_exp1.wav"
+        );  
+      
+        /*Play the sound when the page is loaded*/
+        
+        var playPromise = document.getElementById("sound").play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+      // Automatic playback started!
+      // Show playing UI.
+            })
+            .catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+          });
+        }
+
+        
+      $("#startExperimentButton").on("click", StartExperiment);        
+      }
+
+
+
+
+
+
       function StartExperiment() {
         $("#instructions").hide();
         $("#startExperimentButton").unbind("click");
@@ -614,6 +648,27 @@ for (let i = 0; i < audioFile.length; i++) {
         $("#doneExperimentI").hide();
         $("#instructions2").show();
         $("#startExperimentIIButton").on("click", HideInstructionII);
+
+      $("#sound").attr(
+          "src",
+          "dissertation_sound/instruction/instruction_exp1.wav"
+        );  
+      
+        /*Play the sound when the page is loaded*/
+        
+        var playPromise = document.getElementById("sound").play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+      // Automatic playback started!
+      // Show playing UI.
+            })
+            .catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+          });
+        }
+
       }
 
       
@@ -728,4 +783,4 @@ link.click();
         $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
       }
       
-      $("#startExperimentButton").on("click", StartExperiment);
+      $("#startholderExperimentButton").on("click", StartInstruction);
