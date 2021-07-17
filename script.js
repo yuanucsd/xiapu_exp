@@ -1,9 +1,9 @@
 /*import csv files*/
-var practiceI_list = [{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"dissertation_sound/exp1/practice/19A/vowel_long_after_window_r1.wav","length":"long","tone":"r1","gl":"modal","answer":"替","seq":"1","neu":"NA","status":"practice","flipped":"NA"},{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r2.wav","length":"long","tone":"r2","gl":"modal","answer":"替","seq":"2","neu":"NA","status":"practice","flipped":"NA"},{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r3.wav","length":"long","tone":"r3","gl":"modal","answer":"替","seq":"3","neu":"NA","status":"practice","flipped":"NA"},{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r4.wav","length":"long","tone":"r4","gl":"modal","answer":"替","seq":"4","neu":"NA","status":"practice","flipped":"NA"},{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r5.wav","length":"long","tone":"r5","gl":"modal","answer":"替","seq":"5","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r1.wav","length":"long","tone":"r1","gl":"modal","answer":"救","seq":"6","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r2.wav","length":"long","tone":"r2","gl":"modal","answer":"救","seq":"7","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r3.wav","length":"long","tone":"r3","gl":"modal","answer":"救","seq":"8","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r4.wav","length":"long","tone":"r4","gl":"modal","answer":"救","seq":"9","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r5.wav","length":"long","tone":"r5","gl":"modal","answer":"救","seq":"10","neu":"NA","status":"practice","flipped":"NA"}];
+var practiceI_list = [{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"dissertation_sound/exp1/practice/19A/vowel_long_after_window_r1.wav","length":"long","tone":"r1","gl":"modal","answer":"替","seq":"1","neu":"NA","status":"practice","flipped":"NA"},/*{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r2.wav","length":"long","tone":"r2","gl":"modal","answer":"替","seq":"2","neu":"NA","status":"practice","flipped":"NA"},{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r3.wav","length":"long","tone":"r3","gl":"modal","answer":"替","seq":"3","neu":"NA","status":"practice","flipped":"NA"},{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r4.wav","length":"long","tone":"r4","gl":"modal","answer":"替","seq":"4","neu":"NA","status":"practice","flipped":"NA"},{"word0":"铁","tone0":"5","word1":"体","tone1":"42","word2":"替","tone2":"35","word3":"踢","tone3":"5","word4":"读","tone4":"2","word5":"听","tone5":"44","word6":"退","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/19A/vowel_long_after_window_r5.wav","length":"long","tone":"r5","gl":"modal","answer":"替","seq":"5","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r1.wav","length":"long","tone":"r1","gl":"modal","answer":"救","seq":"6","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r2.wav","length":"long","tone":"r2","gl":"modal","answer":"救","seq":"7","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r3.wav","length":"long","tone":"r3","gl":"modal","answer":"救","seq":"8","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r4.wav","length":"long","tone":"r4","gl":"modal","answer":"救","seq":"9","neu":"NA","status":"practice","flipped":"NA"},{"word0":"修","tone0":"44","word1":"右","tone1":"23","word2":"救","tone2":"35","word3":"肉","tone3":"2","word4":"挑","tone4":"44","word5":"手","tone5":"42","word6":"树","tone6":"35","path":"https://yuanucsd.github.io/dissertation_sound/exp1/practice/153A/vowel_long_after_window_r5.wav","length":"long","tone":"r5","gl":"modal","answer":"救","seq":"10","neu":"NA","status":"practice","flipped":"NA"}*/];
 
 
 var practiceII_list = [{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/19B_05_F.wav","length":"NA","tone":"44","gl":"NA","answer":"歌谱","seq":"1","neu":"2_44","status":"practice","flipped":"no"},
-                       {"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/19B_09_F.wav","length":"NA","tone":"44","gl":"NA","answer":"歌谱","seq":"2","neu":"2_44","status":"practice","flipped":"no"},{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/20A_09_F.wav","length":"NA","tone":"2","gl":"NA","answer":"局长","seq":"3","neu":"2_44","status":"practice","flipped":"no"},{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/20B_03_F.wav","length":"NA","tone":"2","gl":"NA","answer":"局长","seq":"4","neu":"2_44","status":"practice","flipped":"no"},{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/20B_05_F.wav","length":"NA","tone":"2","gl":"NA","answer":"局长","seq":"5","neu":"2_44","status":"practice","flipped":"no"},{"word0":"甲板","tone0":"5","word1":"假钱","tone1":"42","path":"dissertation_sound/exp2/practice/54A_01_F.wav","length":"NA","tone":"5","gl":"NA","answer":"甲板","seq":"6","neu":"5_42","status":"practice","flipped":"no"},{"word0":"甲板","tone0":"5","word1":"假钱","tone1":"42","path":"dissertation_sound/exp2/practice/55A_03_F.wav","length":"NA","tone":"42","gl":"NA","answer":"假钱","seq":"7","neu":"5_42","status":"practice","flipped":"no"},{"word0":"甲板","tone0":"5","word1":"假钱","tone1":"42","path":"dissertation_sound/exp2/practice/55B_01_F.wav","length":"NA","tone":"42","gl":"NA","answer":"假钱","seq":"8","neu":"5_42","status":"practice","flipped":"no"}];
+                       /*{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/19B_09_F.wav","length":"NA","tone":"44","gl":"NA","answer":"歌谱","seq":"2","neu":"2_44","status":"practice","flipped":"no"},{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/20A_09_F.wav","length":"NA","tone":"2","gl":"NA","answer":"局长","seq":"3","neu":"2_44","status":"practice","flipped":"no"},{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/20B_03_F.wav","length":"NA","tone":"2","gl":"NA","answer":"局长","seq":"4","neu":"2_44","status":"practice","flipped":"no"},{"word0":"歌谱","tone0":"44","word1":"局长","tone1":"2","path":"dissertation_sound/exp2/practice/20B_05_F.wav","length":"NA","tone":"2","gl":"NA","answer":"局长","seq":"5","neu":"2_44","status":"practice","flipped":"no"},{"word0":"甲板","tone0":"5","word1":"假钱","tone1":"42","path":"dissertation_sound/exp2/practice/54A_01_F.wav","length":"NA","tone":"5","gl":"NA","answer":"甲板","seq":"6","neu":"5_42","status":"practice","flipped":"no"},{"word0":"甲板","tone0":"5","word1":"假钱","tone1":"42","path":"dissertation_sound/exp2/practice/55A_03_F.wav","length":"NA","tone":"42","gl":"NA","answer":"假钱","seq":"7","neu":"5_42","status":"practice","flipped":"no"},{"word0":"甲板","tone0":"5","word1":"假钱","tone1":"42","path":"dissertation_sound/exp2/practice/55B_01_F.wav","length":"NA","tone":"42","gl":"NA","answer":"假钱","seq":"8","neu":"5_42","status":"practice","flipped":"no"}*/];
 
 
 var trial_ExpI_list = [{"word0":"诗","tone0":"44","word1":"死","tone1":"42","word2":"四","tone2":"35","word3":"寺","tone3":"23","word4":"时","tone4":"11","word5":"湿","tone5":"5","word6":"实","tone6":"2","path":"dissertation_sound/exp1/test/vowel_long_after_window_2.wav","length":"long","tone":"2","gl":"modal","answer":"NA","seq":"1","neu":"NA","status":"test","flipped":"NA"},
@@ -36,6 +36,7 @@ var trial_ExpII_spk4_list = [{"num":"3A.wav","word0":"路上","tone0":"23","word
                              
 {"num":"43A.wav","word0":"试纸","tone0":"35","word1":"湿疹","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿疹","seq":"43","neu":"5_35","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/43A.wav"},{"num":"43B.wav","word0":"试纸","tone0":"35","word1":"湿疹","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿疹","seq":"44","neu":"5_35","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/43B.wav"},{"num":"43A-flipped.wav","word0":"试纸","tone0":"35","word1":"湿疹","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿疹","seq":"45","neu":"5_35","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/43A-flipped.wav"},{"num":"43B-flipped.wav","word0":"试纸","tone0":"35","word1":"湿疹","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿疹","seq":"46","neu":"5_35","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/43B-flipped.wav"},{"num":"48A.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"42","gl":"NA","answer":"假设","seq":"47","neu":"35_42","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/48A.wav"},{"num":"48A-flipped.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"42","gl":"NA","answer":"假设","seq":"48","neu":"35_42","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/48A-flipped.wav"},{"num":"48B.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"42","gl":"NA","answer":"假设","seq":"49","neu":"35_42","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/48B.wav"},{"num":"48B-flipped.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"42","gl":"NA","answer":"假设","seq":"50","neu":"35_42","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/48B-flipped.wav"},{"num":"49A.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"35","gl":"NA","answer":"价格","seq":"51","neu":"35_42","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/49A.wav"},{"num":"49A-flipped.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"35","gl":"NA","answer":"价格","seq":"52","neu":"35_42","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/49A-flipped.wav"},{"num":"49B.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"35","gl":"NA","answer":"价格","seq":"53","neu":"35_42","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/49B.wav"},{"num":"49B-flipped.wav","word0":"假设","tone0":"42","word1":"价格","tone1":"35","length":"NA","tone":"35","gl":"NA","answer":"价格","seq":"54","neu":"35_42","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/49B-flipped.wav"},{"num":"50A.wav","word0":"替身","tone0":"35","word1":"体操","tone1":"42","length":"NA","tone":"35","gl":"NA","answer":"替身","seq":"55","neu":"35_42","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/50A.wav"},{"num":"50A-flipped.wav","word0":"替身","tone0":"35","word1":"体操","tone1":"42","length":"NA","tone":"35","gl":"NA","answer":"替身","seq":"56","neu":"35_42","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/50A-flipped.wav"},{"num":"50B.wav","word0":"替身","tone0":"35","word1":"体操","tone1":"42","length":"NA","tone":"35","gl":"NA","answer":"替身","seq":"57","neu":"35_42","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/50B.wav"},{"num":"50B-flipped.wav","word0":"替身","tone0":"35","word1":"体操","tone1":"42","length":"NA","tone":"35","gl":"NA","answer":"替身","seq":"58","neu":"35_42","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/50B-flipped.wav"},{"num":"51B.wav","word0":"替身","tone0":"35","word1":"体操","tone1":"42","length":"NA","tone":"42","gl":"NA","answer":"体操","seq":"59","neu":"35_42","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/51B.wav"},{"num":"51B-flipped.wav","word0":"替身","tone0":"35","word1":"体操","tone1":"42","length":"NA","tone":"42","gl":"NA","answer":"体操","seq":"60","neu":"35_42","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/51B-flipped.wav"},{"num":"62A.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"35","gl":"NA","answer":"四季","seq":"61","neu":"5_35","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/62A.wav"},{"num":"62A-flipped.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"35","gl":"NA","answer":"四季","seq":"62","neu":"5_35","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/62A-flipped.wav"},{"num":"62B.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"35","gl":"NA","answer":"四季","seq":"63","neu":"5_35","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/62B.wav"},{"num":"62B-flipped.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"35","gl":"NA","answer":"四季","seq":"64","neu":"5_35","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/62B-flipped.wav"},{"num":"63A.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿气","seq":"65","neu":"5_35","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/63A.wav"},{"num":"63A-flipped.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿气","seq":"66","neu":"5_35","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/63A-flipped.wav"},{"num":"63B.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿气","seq":"67","neu":"5_35","status":"test","flipped":"no","path":"dissertation_sound/exp2/test/09_F/63B.wav"},{"num":"63B-flipped.wav","word0":"四季","tone0":"35","word1":"湿气","tone1":"5","length":"NA","tone":"5","gl":"NA","answer":"湿气","seq":"68","neu":"5_35","status":"test","flipped":"yes","path":"dissertation_sound/exp2/test/09_F/63B-flipped.wav"}*/];
 
+var productionList = [{"character":"诗", tone: 44}, {"character":"死", tone: 42}, {"character": "四", tone: 35}, {"character":"寺", tone: 23}, {"character": "时", tone: 11}, {"character": "湿", tone: 5}, {"character": "实", tone: 2}];
 
 var audioFile = [];
 var trial_all = practiceI_list.concat(practiceII_list, trial_ExpI_list, trial_ExpII_spk1_list, trial_ExpII_spk2_list, trial_ExpII_spk3_list, trial_ExpII_spk4_list)
@@ -106,6 +107,7 @@ for (let i = 0; i < audioFile.length; i++) {
       var optionList = [];
 /*wordList is the randomized words element in the trialList list*/
       var wordList = [];
+      var toneList = [];
 
 /*csvFile is the csv that will be saved at the end of the experiment*/
       var csvFile = [["trial_num", "radio_value", "word_selected", "tone_selected","scale_value", "word_list", "sound", "stimuli_length", "stimuli_tone", "stimuli_gl", "neu_between", "answer", "trial_sequence", "response_time"]];
@@ -128,7 +130,7 @@ for (let i = 0; i < audioFile.length; i++) {
       var trialListRandomII_spk2 = jsPsych.randomization.repeat(trial_ExpII_spk2_list, 1);
       var trialListRandomII_spk3 = jsPsych.randomization.repeat(trial_ExpII_spk3_list, 1);
       var trialListRandomII_spk4 = jsPsych.randomization.repeat(trial_ExpII_spk4_list, 1);
-                       
+      var productionListRandom = jsPsych.randomization.repeat(productionList, 1);                 
 
       var trialListRandom = practiceListRandom.concat(trialListRandom_repeatI, trialListRandom_repeatII, trialListRandom_repeatIII, practiceListRandomII, trialListRandomII_spk1, trialListRandomII_spk2, trialListRandomII_spk3, trialListRandomII_spk4);
 
@@ -237,7 +239,7 @@ for (let i = 0; i < audioFile.length; i++) {
           
 /*shuffle the index to randomize the option order*/
           
-         wordListIndex =  jsPsych.randomization.repeat([0,1,2,3,4,5,6],1);
+         var wordListIndex =  jsPsych.randomization.repeat([0,1,2,3,4,5,6],1);
          var key0 = "word"+wordListIndex[0];
          var key1 = "word"+wordListIndex[1];
          var key2 = "word"+wordListIndex[2];
@@ -396,6 +398,8 @@ for (let i = 0; i < audioFile.length; i++) {
       
 
 /*unselect all the radio buttons*/
+
+
       function DoneWithScale() {
         $("#word1").prop("checked", false);
         $("#word2").prop("checked", false);
@@ -425,34 +429,19 @@ for (let i = 0; i < audioFile.length; i++) {
         
         $("#trialnumdiv").hide();
         $("#trialDiv").hide();
-/*it is important to turn off the listener*/
+
         $('#submit').unbind('click');
         
         $("#trialnumdivII").hide();
         $("#trialDivII").hide();
-/*it is important to turn off the listener*/
+
         $('#submitII').unbind('click');
         
         trialnum = trialnum + 1;
         trialnumII = trialnumII + 1;
         curTrial = curTrial + 1;
 
-/*      var expIIPracticeLength = practiceListRandom.length + trialListRandom_repeatI.length + trialListRandom_repeatII.length + trialListRandom_repeatIII.length + practiceListRandomII.length;
-      var expIISpk1Length = practiceListRandom.length + trialListRandom_repeatI.length + trialListRandom_repeatII.length + trialListRandom_repeatIII.length + practiceListRandomII.length + trialListRandomII_spk1.length;
-      var expIISpk2Length = practiceListRandom.length + trialListRandom_repeatI.length + trialListRandom_repeatII.length + trialListRandom_repeatIII.length + practiceListRandomII.length + trialListRandomII_spk1.length + trialListRandomII_spk2.length;
-      var expIISpk3Length = practiceListRandom.length + trialListRandom_repeatI.length + trialListRandom_repeatII.length + trialListRandom_repeatIII.length + practiceListRandomII.length + trialListRandomII_spk1.length + trialListRandomII_spk2.length + trialListRandomII_spk3.length;
-      var expIISpk4Length = trialListRandom.length;
-*/        
-
-/*    var practiceI_list = csvResult.practiceI;
-      var practiceII_list = csvResult.practiceII;
-      var trial_ExpI_list = csvResult.trial_expI;
-      var trial_ExpII_spk1_list = csvResult.trial_expII_spk1;
-      var trial_ExpII_spk2_list = csvResult.trial_expII_spk2;
-      var trial_ExpII_spk3_list = csvResult.trial_expII_spk3;
-      var trial_ExpII_spk4_list = csvResult.trial_expII_spk4;
-
-*/        
+ 
         
         
         
@@ -529,6 +518,8 @@ for (let i = 0; i < audioFile.length; i++) {
           }
         else {
           trialnumII = 1;
+          curTrial = 0;
+          trialnum = 1;
           setTimeout(DoneWithExperimentII, 500);
         }
         }
@@ -630,15 +621,65 @@ for (let i = 0; i < audioFile.length; i++) {
         $("#instructions2").hide();
         ShowTrial();
       }
-      
-      
-      
+
       function DoneWithExperimentII() {
+        $("#doneExperimentII").show();
+        $("#EndExperimentIIButton").on("click", StartProduction);
+      }
+
+  
+      function StartProduction(){
+        $("#doneExperimentII").hide();
+        $("#instructionProductiondiv").show();
+        $("#startProductiondivButton").on("click", ShowProduction);
+      }
+
+
+
+
+
+      function ShowProduction(){
+        $("#instructionProductiondiv").hide();
+        $("#fixation").show();
+        setTimeout(HideFixation, 500);
+        setTimeout(RunProduction, 500);
+      }      
+
+      function RunProduction(){
+        $("#productiondiv").show();
+        var production_character = productionListRandom[curTrial].character;
+        var production_sentence = "我会讲"+"“"+production_character+"”"+"这个字。"
+        $("#productionnumdiv").text("第"+trialnum+"/"+productionListRandom.length+"题");
+        $("#productiontext").text(production_sentence);
+        $("#productionButton").on("click", CheckProduction);
+      }
+      
+
+      function CheckProduction(){
+        $('#productionButton').unbind('click');
+        curTrial = curTrial + 1;
+        trialnum = trialnum + 1;
+        
+
+        $("#productiondiv").hide();
+        if (curTrial < productionListRandom.length){
+          ShowProduction();
+        } else {
+          DoneWithProduction();
+        }
+        
+      }
+
+      
+
+      function DoneWithProduction() {
         $("#debriefing").show();
         $('#doneWithDebriefing').on("click", DoneWithDebriefing);
       }
 
-      
+
+
+
       function DoneWithDebriefing() {
         $("#debriefing").hide();
         $('#doneWithDebriefing').unbind("click");

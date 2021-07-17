@@ -42,6 +42,19 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
       }
+
+      #productiondiv {
+        /*color means the color of the text; background color means the color of the div box*/
+        display: none; 
+        width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+
+
       #trialDivII {
         /*color means the color of the text; background color means the color of the div box*/
         display: none; 
@@ -51,6 +64,16 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
       }
+      #productiondiv {
+        /*color means the color of the text; background color means the color of the div box*/
+        display: none; 
+        width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
       #done {
         display: none;
         text-align: center;
@@ -142,7 +165,14 @@
       #submitbuttonII {
         text-align:center; 
       }
-      
+
+       #productionButtondiv {
+        text-align:center; 
+      }
+      #productionButton {
+        text-align:center;
+      }
+     
       #startButtondiv {
         text-align:center; 
       }
@@ -185,7 +215,16 @@
       #startIIButtondiv {
         text-align:center;
       }
-      
+
+      #startProductiondiv {
+        text-align:center;
+      }
+
+
+
+
+
+
       #doneExperimentI {
         display: none;
         position: absolute;
@@ -195,6 +234,17 @@
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
       }
+
+      #doneExperimentII {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+
 
       #doneExperimentIPartI {
         display: none;
@@ -282,6 +332,20 @@
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
       }
+
+
+      #instructionProductiondiv {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+
+
       #debriefing {
         display: none;
         font-size: 15pt;
