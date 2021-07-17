@@ -110,7 +110,7 @@ for (let i = 0; i < audioFile.length; i++) {
       var toneList = [];
 
 /*csvFile is the csv that will be saved at the end of the experiment*/
-      var csvFile = [["trial_num", "radio_value", "word_selected", "tone_selected","scale_value", "word_list", "sound", "stimuli_length", "stimuli_tone", "stimuli_gl", "neu_between", "answer", "trial_sequence", "response_time"]];
+      var csvFile = [["trial_num", "radio_value", "word_selected", "tone_selected","scale_value", "word_list", "sound", "stimuli_length", "stimuli_tone", "stimuli_gl", "neu_between", "answer", "trial_sequence", "response_time", "experiment_no"]];
 /*wordListString stores the string version of the options displayed on the screen*/
       var wordListString = "";
 
@@ -158,6 +158,14 @@ for (let i = 0; i < audioFile.length; i++) {
       
       /* This gets called when they click the button 
         on the instructions page */
+      function StartHolder(){
+        $("#doneWithDebriefing").unbind("click");
+        $("#debriefing").hide();
+        $("#startholderdiv").show();
+        $("#startholderExperimentButton").on("click", StartInstruction); 
+      }
+
+
 
       function StartInstruction(){
       $("#startholderExperimentButton").unbind("click");
@@ -370,7 +378,7 @@ for (let i = 0; i < audioFile.length; i++) {
             var stimuli_gl = trialListRandom[curTrial].gl;
             var stimuli_answer = trialListRandom[curTrial].answer;
             var stimuli_neu = trialListRandom[curTrial].neu;
-            var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime];
+            var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime, "exp1"];
             csvFile.push(curresultList);
             
             
@@ -413,7 +421,7 @@ for (let i = 0; i < audioFile.length; i++) {
 
           
           
-          var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime];
+          var curresultList = [curTrial, radioselectedValue, wordselectedValue, toneselectedValue, scaleValue, wordListString, trialListRandom[curTrial].path, stimuli_length, stimuli_tone, stimuli_gl, stimuli_answer, stimuli_neu, trialListRandom[curTrial].seq, responseTime, "exp2"];
             csvFile.push(curresultList);
           
           
@@ -499,7 +507,19 @@ for (let i = 0; i < audioFile.length; i++) {
             setTimeout(ShowTrial,0);}   
         else if (curTrial == (partILength)){
             trialnum = 1;
-            setTimeout(DoneWithExperimentIPartI, 500);          
+            setTimeout(DoneWithExperimentIPartI, 500);
+                    let csvContent = "data:text/csv;charset=utf-8," 
+    + csvFile.map(e => e.join(",")).join("\n");
+          var dataToServer = {
+          id: "YCSY"+$("#subjectid").val()+"exp1",
+          experimenter: "YC",
+          experimentName: "IdentificationTask",
+          curData: JSON.stringify(csvContent),
+          };
+
+        
+        $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
+
         } 
 
         
@@ -555,6 +575,18 @@ for (let i = 0; i < audioFile.length; i++) {
           curTrial = 0;
           trialnum = 1;
           setTimeout(DoneWithExperimentII, 500);
+          let csvContent = "data:text/csv;charset=utf-8," 
+    + csvFile.map(e => e.join(",")).join("\n");
+          var dataToServer = {
+          id: "YCSY"+$("#subjectid").val()+"exp2",
+          experimenter: "YC",
+          experimentName: "IdentificationTask",
+          curData: JSON.stringify(csvContent),
+          };
+
+        
+        $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
+
         }
         }
       
@@ -687,7 +719,7 @@ for (let i = 0; i < audioFile.length; i++) {
         $("#doneExperimentII").hide();
         $("#instructionProductiondiv").show();
         $("#startProductiondivButton").on("click", ShowProduction);
-        var curresultList = ["curTrial", "production_character", "production_tone"];
+        var curresultList = ["curTrial", "production_character", "production_tone","experiment_no"];
         csvFile.push(curresultList)
 
       }
@@ -711,7 +743,7 @@ for (let i = 0; i < audioFile.length; i++) {
         $("#productionnumdiv").text("第"+trialnum+"/"+productionListRandom.length+"题");
         $("#productiontext").text(production_sentence);
         $("#productionButton").on("click", CheckProduction);
-        var curresultList = [curTrial, production_character, production_tone];
+        var curresultList = [curTrial, production_character, production_tone, "exp3"];
         csvFile.push(curresultList);
 
       }
@@ -727,7 +759,7 @@ for (let i = 0; i < audioFile.length; i++) {
         if (curTrial < productionListRandom.length){
           ShowProduction();
         } else {
-          DoneWithProduction();
+          DoneWithDebriefing();
         }
         
       }
@@ -743,8 +775,7 @@ for (let i = 0; i < audioFile.length; i++) {
 
 
       function DoneWithDebriefing() {
-        $("#debriefing").hide();
-        $('#doneWithDebriefing').unbind("click");
+        
         $("#done").show();
 
         
@@ -783,4 +814,4 @@ link.click();
         $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
       }
       
-      $("#startholderExperimentButton").on("click", StartInstruction);
+      $("#doneWithDebriefing").on("click", StartHolder);
