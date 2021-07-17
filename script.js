@@ -65,7 +65,7 @@ function loadedAudio() {
     // this will be called every time an audio file is loaded
     // we keep track of the loaded files vs the requested files
     loaded++;
-    if (loaded == audioFiles.length){
+    if (loaded == audioFile.length){
     	// all have loaded
     	console.log("All audios are preloaded");
     }
