@@ -771,6 +771,16 @@ for (let i = 0; i < audioFile.length; i++) {
         $('#doneWithDebriefing').on("click", DoneWithDebriefing);
       }
 
+     function CheckIdInput(){
+       var input = document.getElementById('subjectid');
+
+      if(input.value.length == 0){
+       alert("请输入被试编号")
+      } else {
+        StartHolder();
+      }
+       
+     }
 
 
 
@@ -814,4 +824,4 @@ link.click();
         $.post("https://psyc241.ucsd.edu/Turk/save.php", dataToServer);
       }
       
-      $("#doneWithDebriefing").on("click", StartHolder);
+      $("#doneWithDebriefing").on("click", CheckIdInput);
