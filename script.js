@@ -272,7 +272,7 @@ for (let i = 0; i < audioFile.length; i++) {
 
     
         if (trialListRandom[curTrial].word6 !== undefined){
-        $("#trialnum").text("第"+trialnum+"/"+totalnum+"题");
+        $("#trialnum").text("第"+trialnum+"/"+totalnum+"题"+"   ("+curTrial+")");
         /* show the trialDiv */
         $("#trialDiv").show();
         $("#trialnumdiv").show();
@@ -314,7 +314,7 @@ for (let i = 0; i < audioFile.length; i++) {
         optionList.push(wordList);
          $("#submit").on("click", CheckSelect);
         } else {
-        $("#trialnumII").text("第"+trialnumII+"/"+totalnum+"题");
+        $("#trialnumII").text("第"+trialnumII+"/"+totalnum+"题" +"   ("+curTrial+")");
         /* show the trialDiv */
         $("#trialDivII").show();
         $("#trialnumdivII").show();
@@ -351,10 +351,10 @@ for (let i = 0; i < audioFile.length; i++) {
       function CheckSelect() {
         if (wordList.length == 7){
                   if ($('input[name=ExpI]:checked').val() == undefined & $('input[name=confident]:checked').val() == undefined) {
-          alert("请选择您听到的字和您认为选得对不对")
+          alert("请选择您听到的字和您认为选的对不对")
         }
         else if ($('input[name=ExpI]:checked').val() != undefined & $('input[name=confident]:checked').val() == undefined) {
-          alert("请选择您认为选得对不对")} 
+          alert("请选择您认为选的对不对")} 
         else if ($('input[name=ExpI]:checked').val() == undefined & $('input[name=confident]:checked').val() != undefined) {
           alert("请选择您听到的字")} 
         else{
@@ -389,10 +389,10 @@ for (let i = 0; i < audioFile.length; i++) {
         }}
           else {
             if ($('input[name=ExpII]:checked').val() == undefined & $('input[name=confidentII]:checked').val() == undefined) {
-          alert("请选择您听到的词和您认为选得对不对")
+          alert("请选择您听到的词和您认为选的对不对")
         }
         else if ($('input[name=ExpII]:checked').val() != undefined & $('input[name=confidentII]:checked').val() == undefined) {
-          alert("请选择您认为选得对不对")} 
+          alert("请选择您认为选的对不对")} 
         else if ($('input[name=ExpII]:checked').val() == undefined & $('input[name=confidentII]:checked').val() != undefined) {
           alert("请选择您听到的词")} 
         else{
