@@ -25,7 +25,8 @@
       .checkboxgroup {
         display: inline-block;
         text-align: center;
-        margin-left: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
 
       }
       .checkboxgroup label {
@@ -347,13 +348,6 @@
 
 
 
-      #debriefing {
-        font-size: 15pt;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-      }
 
       #distraction {
         display: none;
@@ -386,4 +380,18 @@
         -moz-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
+      }
+
+
+      #debriefing {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      #doneWithDebriefingButtondiv {
+        text-align:center; 
       }

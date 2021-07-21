@@ -9,7 +9,7 @@
     
     <script src="jquery.min.js"></script>
     <script src="jspsych.js"></script>
-    <link href="https://cdn.glitch.com/7f063f30-8fe4-463a-8e2e-e098bbb37320%2Fcover-image.jpg?v=1583474556191" rel="icon" type="image/x-icon" />
+    <link href="image/cover_image.jpg" rel="icon" type="image/x-icon" />
      <link rel="stylesheet" href="style.css" />
 
   </head>
@@ -33,9 +33,8 @@
     <div id="instructions">
       <p>
         实验一<br><br>
-        接下来您将听到一些用霞浦话讲的字。您会看到一些选项。请选择您认为其中最符合您听到的录音的选项。<br> <br>
-        在您选择所听到的字后，请用数字1、2、3、4、5来表示您对选的字的确定程度。1代表您非常不确定自己选的对不对，5代表您非常确定自己选的是对的。选的数字越大，代表您对您的选择越有信心。<br> <br>
-        您可以点击“重播”按钮来多次播放录音，重复播放录音的次数没有限制。<br>
+        接下来您将听到一些用霞浦话讲的字。您会看到一些选项。请选择您认为其中最符合您听到的录音的选项。<br><br>
+        您可以点击“重播”按钮来多次播放录音，重复播放录音的次数没有限制。<br><br>
         请先做十个练习题。
       </p>
       <div id = "startButtondiv">
@@ -57,23 +56,13 @@
       </div>
     </div>
 
-    <div id = "doneExperimentIPartII">
-      <p>
-      实验一 第二部分到此结束
-      </p>
-      <div id = "EndExperimentIPartIIButtondiv">
-      <button id="EndExperimentIPartIIButton">
-        点击此处开始实验一 第三部分
-      </button>
-      </div>
-    </div>
 
     
     
 
     <div id = "donePracticeI">
       <p>
-      练习到此结束。<br>下面实验正式开始。实验一共有三部分，每部分有四十题。
+      练习到此结束。<br>下面实验正式开始。实验一共有两部分，每部分有四十题。
       </p>
       <div id = "EndPracticeButtondiv">
       <button id="EndPracticeButton">
@@ -99,7 +88,7 @@
     
     <div id = "donePracticeII">
       <p>
-      练习到此结束。下面实验正式开始。实验二共有四部分，每部分约六十五题。
+      练习到此结束。下面实验正式开始。实验二共有两部分，每部分二十题。
       </p>
       <div id = "EndPracticeIIButtondiv">
       <button id="EndPracticeIIButton">
@@ -120,27 +109,6 @@
       </div>
     </div>
 
-    <div id = "doneExperimentIIPartII">
-      <p>
-      实验二 第二部分到此结束
-      </p>
-      <div id = "EndExperimentIIPartIIButtondiv">
-      <button id="EndExperimentIIPartIIButton">
-        点击此处开始实验二 第三部分
-      </button>
-      </div>
-    </div>
-    
-    <div id = "doneExperimentIIPartIII">
-      <p>
-      实验二 第三部分到此结束
-      </p>
-      <div id = "EndExperimentIIPartIIIButtondiv">
-      <button id="EndExperimentIIPartIIIButton">
-        点击此处开始实验二 第四部分
-      </button>
-      </div>
-    </div>
     
     <div id = "doneExperimentII">
       <p>
@@ -158,9 +126,8 @@
       <p>
         实验二 <br><br>
         您将会听到一个用霞浦话讲的词。这个词的第二个字被噪音覆盖了。在录音中您会听到每个词的第一个字。每一题中您会看到两个选项。您需要通过听到的第一个字来判断原本的词是什么。<br> <br>
-        在您选择一个词后，请用数字1、2、3、4、5来表示您对选的词的确定程度。1代表您非常不确定自己选的对不对，5代表您非常确定自己选的是对的。选的数字越大，代表您对您的选择越有信心。<br> <br>
-        您可以点击“重播”按钮来多次播放录音，重复播放录音的次数没有限制。
-        请先做八个练习题。
+        您可以点击“重播”按钮来多次播放录音，重复播放录音的次数没有限制。<br><br>
+        请先做四个练习题。
       </p>
       <div id = "startIIButtondiv">
       <button id="startExperimentIIButton">
@@ -209,14 +176,15 @@
     
     <div id="debriefing">
       <p>
-        被试编号（实验者填写）: <input id="subjectid">
+        被试编号（实验者填写）: <input id="subjectid"> <br> <br>
       </p>
 
       
-
+       <div id = "doneWithDebriefingButtondiv">
       <button id="doneWithDebriefing">
         点击此处提交
       </button>
+    </div>
     </div>
     
     <div id="preload"></div>
@@ -274,70 +242,6 @@
 
       </div>
       
-
-      <div id = "scale">
-      <br>
-      <br>
-
-      <p  style="text-align:center;" id = "scaleprompt">
-        请选择您听到的录音和选择的字的匹配程度：
-      </p>
-        
-        
-        
-      <!--  
-      <div id = "likertscale">  
-            <label for="likertStart" class = "likertlabel">1 <br />
-      <input type="radio" id="likertStart" name="confident" value="1" />
-      </label>
-
-      <label for="likert2" class = "likertlabel">2<br />
-      <input type="radio" id="likert2" name="confident" value="2" />
-      </label>
-
-      <label for="likert3" class = "likertlabel">3<br />
-      <input type="radio" id="likert3" name="confident" value="3" />
-      </label>
-
-      <label for="likert4" class = "likertlabel">4<br />
-      <input type="radio" id="likert4" name="confident" value="4" />
-      </label>
-
-      <label for="likertEnd" class = "likertlabel">5<br />
-      <input type="radio" id="likertEnd" name="confident" value="5" />
-      </label>
-        
-
- 
-      
-      </div>  -->
-        
-      <div id = "likertscale">   
-<table>
-    <thead>
-        <tr>
-            <th></th>
-            <th style="text-align:center" width="30px">1</th>
-            <th style="text-align:center" width="30px">2</th>
-            <th style="text-align:center" width="30px">3</th>
-            <th style="text-align:center" width="30px">4</th>
-            <th style="text-align:center" width="30px">5</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align:right;">非常不确定选的字对不对</td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likertStart" name="confident" value="1"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likert2" name="confident" value="2"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likert3" name="confident" value="3"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likert4" name="confident" value="4"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likertEnd" name="confident" value="5"/></td>
-            <td style="text-align:left;">非常确定选的字是对的</td>
-        </tr>
-  </tbody>
-</table>  
-       </div>   
         
         
         
@@ -352,6 +256,9 @@
     </div>
       </div>
     </div>
+
+
+
     
     <div id="trialDivII">
     <div style="text-align:center;" id = "trialnumdivII">
@@ -380,45 +287,6 @@
       </div>
       
 
-      <div id = "scaleII">
-      <br>
-      <br>
-
-      <p style="text-align:center;" id = "scalepromptII">
-        请选择您对所选的词的确定程度：
-      </p>
-        
-        
-      <div id = "likertscaleII">   
-<table>
-    <thead>
-        <tr>
-            <th></th>
-            <th style="text-align:center" width="30px">1</th>
-            <th style="text-align:center" width="30px">2</th>
-            <th style="text-align:center" width="30px">3</th>
-            <th style="text-align:center" width="30px">4</th>
-            <th style="text-align:center" width="30px">5</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align:right;">非常不确定选的词对不对</td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likertStartII" name="confidentII" value="1"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likert2II" name="confidentII" value="2"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likert3II" name="confidentII" value="3"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likert4II" name="confidentII" value="4"/></td>
-            <td style="text-align:center" width="30px"><input type="radio" id="likertEndII" name="confidentII" value="5"/></td>
-            <td style="text-align:left;">非常确定选的词是对的</td>
-        </tr>
-  </tbody>
-</table>  
-       </div>   
-
- 
-      
-      </div>  
         
       <div id = "submitbuttonII">
         <br>
